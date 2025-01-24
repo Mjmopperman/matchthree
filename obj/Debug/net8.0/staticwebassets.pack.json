@@ -1,0 +1,265 @@
+{
+  "Files": [
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/obj/Debug/net8.0/scopedcss/projectbundle/matchthree.bundle.scp.css",
+      "PackagePath": "staticwebassets/matchthree.bundle.scp.css"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/10C.svg",
+      "PackagePath": "staticwebassets/images/10C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/10D.svg",
+      "PackagePath": "staticwebassets/images/10D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/10H.svg",
+      "PackagePath": "staticwebassets/images/10H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/10S.svg",
+      "PackagePath": "staticwebassets/images/10S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/2C.svg",
+      "PackagePath": "staticwebassets/images/2C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/2D.svg",
+      "PackagePath": "staticwebassets/images/2D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/2H.svg",
+      "PackagePath": "staticwebassets/images/2H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/2S.svg",
+      "PackagePath": "staticwebassets/images/2S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/3C.svg",
+      "PackagePath": "staticwebassets/images/3C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/3D.svg",
+      "PackagePath": "staticwebassets/images/3D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/3H.svg",
+      "PackagePath": "staticwebassets/images/3H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/3S.svg",
+      "PackagePath": "staticwebassets/images/3S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/4C.svg",
+      "PackagePath": "staticwebassets/images/4C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/4D.svg",
+      "PackagePath": "staticwebassets/images/4D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/4H.svg",
+      "PackagePath": "staticwebassets/images/4H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/4S.svg",
+      "PackagePath": "staticwebassets/images/4S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/5C.svg",
+      "PackagePath": "staticwebassets/images/5C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/5D.svg",
+      "PackagePath": "staticwebassets/images/5D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/5H.svg",
+      "PackagePath": "staticwebassets/images/5H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/5S.svg",
+      "PackagePath": "staticwebassets/images/5S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/6C.svg",
+      "PackagePath": "staticwebassets/images/6C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/6D.svg",
+      "PackagePath": "staticwebassets/images/6D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/6H.svg",
+      "PackagePath": "staticwebassets/images/6H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/6S.svg",
+      "PackagePath": "staticwebassets/images/6S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/7C.svg",
+      "PackagePath": "staticwebassets/images/7C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/7D.svg",
+      "PackagePath": "staticwebassets/images/7D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/7H.svg",
+      "PackagePath": "staticwebassets/images/7H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/7S.svg",
+      "PackagePath": "staticwebassets/images/7S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/8C.svg",
+      "PackagePath": "staticwebassets/images/8C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/8D.svg",
+      "PackagePath": "staticwebassets/images/8D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/8H.svg",
+      "PackagePath": "staticwebassets/images/8H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/8S.svg",
+      "PackagePath": "staticwebassets/images/8S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/9C.svg",
+      "PackagePath": "staticwebassets/images/9C.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/9D.svg",
+      "PackagePath": "staticwebassets/images/9D.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/9H.svg",
+      "PackagePath": "staticwebassets/images/9H.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/9S.svg",
+      "PackagePath": "staticwebassets/images/9S.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/AC.svg",
+      "PackagePath": "staticwebassets/images/AC.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/AD.svg",
+      "PackagePath": "staticwebassets/images/AD.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/AH.svg",
+      "PackagePath": "staticwebassets/images/AH.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/AS.svg",
+      "PackagePath": "staticwebassets/images/AS.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/JB.svg",
+      "PackagePath": "staticwebassets/images/JB.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/JC.svg",
+      "PackagePath": "staticwebassets/images/JC.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/JD.svg",
+      "PackagePath": "staticwebassets/images/JD.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/JH.svg",
+      "PackagePath": "staticwebassets/images/JH.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/JR.svg",
+      "PackagePath": "staticwebassets/images/JR.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/JS.svg",
+      "PackagePath": "staticwebassets/images/JS.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/KC.svg",
+      "PackagePath": "staticwebassets/images/KC.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/KD.svg",
+      "PackagePath": "staticwebassets/images/KD.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/KH.svg",
+      "PackagePath": "staticwebassets/images/KH.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/KS.svg",
+      "PackagePath": "staticwebassets/images/KS.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/MT.svg",
+      "PackagePath": "staticwebassets/images/MT.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/QC.svg",
+      "PackagePath": "staticwebassets/images/QC.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/QD.svg",
+      "PackagePath": "staticwebassets/images/QD.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/QH.svg",
+      "PackagePath": "staticwebassets/images/QH.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/QS.svg",
+      "PackagePath": "staticwebassets/images/QS.svg"
+    },
+    {
+      "Id": "/media/mjmo/1TBEVO/dotnet/games/matchthree/wwwroot/images/declback.jpg",
+      "PackagePath": "staticwebassets/images/declback.jpg"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.matchthree.props",
+      "PackagePath": "build\\matchthree.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.matchthree.props",
+      "PackagePath": "buildMultiTargeting\\matchthree.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.matchthree.props",
+      "PackagePath": "buildTransitive\\matchthree.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.matchthree.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,237 @@
+﻿@page "/counter"
+
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<table>
+    <tr>
+        <td><h1>Match 3</h1>
+        <img  width="80px" height="128px" 
+        src="@(selectedCard == null?  "images/MT.svg" : "images/"+selectedCard.CardStringAN+".svg")" /></td>
+        <td>
+            <div>Your score: @P1.Score</div>
+            @foreach(CardHand opp in C){
+                <div>Opp 1 score: @opp.Score</div>
+            }
+
+        </td>
+        
+        <td>@(GameOver ? "Game over!!" : "")</td>
+        
+    </tr>
+</table>
+
+
+
+<table>
+    <tr>
+        @for(int dcc=0;dcc<8;dcc++){
+        int lclCounter = dcc;
+        <td ><img  width="80px" height="128px" 
+        src="@(grid.CardSpaces[dcc] == null?  "images/MT.svg" : "images/"+grid.CardSpaces[dcc].CardStringAN+".svg")"  @onclick="(()=>PlaceCard(lclCounter))"/></td>
+
+        }
+        <td>&nbsp;</td>
+        
+        <td ><img  width="80px" height="128px" 
+        src="@(P1.InHand[0] == null?  "images/MT.svg" : "images/"+P1.InHand[0].CardStringAN+".svg")"  @onclick="(()=>SelectCard(0))"/></td>
+    </tr>
+
+    <tr>
+        @for(int dcc=8;dcc<16;dcc++){
+         int lclCounter = dcc;
+        <td ><img  width="80px" height="128px" 
+        src="@(grid.CardSpaces[dcc] == null?  "images/MT.svg" : "images/"+grid.CardSpaces[dcc].CardStringAN+".svg")"  @onclick="(()=>PlaceCard(lclCounter))"/></td>
+
+        }
+         <td>&nbsp;</td>
+        
+        <td ><img  width="80px" height="128px" 
+        src="@(P1.InHand[1] == null?  "images/MT.svg" : "images/"+P1.InHand[1].CardStringAN+".svg")"  @onclick="(()=>SelectCard(1))"/></td>
+    </tr>
+
+    <tr>
+        @for(int dcc=16;dcc<24;dcc++){
+        int lclCounter = dcc;
+
+        <td ><img  width="80px" height="128px" 
+        src="@(grid.CardSpaces[dcc] == null?  "images/MT.svg" : "images/"+grid.CardSpaces[dcc].CardStringAN+".svg")"  @onclick="(()=>PlaceCard(lclCounter))"/></td>
+
+        }
+         <td>&nbsp;</td>
+        
+        <td ><img  width="80px" height="128px" 
+        src="@(P1.InHand[2] == null?  "images/MT.svg" : "images/"+P1.InHand[2].CardStringAN+".svg")"  @onclick="(()=>SelectCard(2))"/></td>
+        
+    </tr>
+
+    <tr>
+        @for(int dcc=24;dcc<32;dcc++){
+         int lclCounter = dcc;
+        <td ><img  width="80px" height="128px" 
+        src="@(grid.CardSpaces[dcc] == null?  "images/MT.svg" : "images/"+grid.CardSpaces[dcc].CardStringAN+".svg")"  @onclick="(()=>PlaceCard(lclCounter))"/></td>
+
+        }
+         <td>&nbsp;</td>
+        
+        <td ><img  width="80px" height="128px" 
+        src="@(P1.InHand[3] == null?  "images/MT.svg" : "images/"+P1.InHand[3].CardStringAN+".svg")"  @onclick="(()=>SelectCard(3))"/></td>
+        
+    </tr>
+
+    <tr>
+        @for(int dcc=32;dcc<40;dcc++){
+             int lclCounter = dcc;
+        <td ><img  width="80px" height="128px" 
+        src="@(grid.CardSpaces[dcc] == null?  "images/MT.svg" : "images/"+grid.CardSpaces[dcc].CardStringAN+".svg")"  @onclick="(()=>PlaceCard(lclCounter))"/></td>
+
+        }
+        
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+@code {
+    public bool GameOver = false;
+    public Card selectedCard = null;
+    public StraightDeck deck = new();
+    public CardHand P1 = new();
+
+    public List<CardHand> C = new();
+    
+    public CardGrid grid = new();
+    public string SelectedCard= "";
+    public int SelectedPos = 0;
+
+    public List<string> InHand = new();
+    public List<string> InHandStyles = new();
+    public string Card = "MT";
+    private int currentCount = 0;
+
+    public void SelectCard(int pos){
+      selectedCard = P1.InHand[pos];
+    }
+    protected override void OnInitialized(){
+        
+
+        
+
+        grid.PlaceCard(deck.Deal(),9);
+        grid.PlaceCard(deck.Deal(),10);
+        grid.PlaceCard(deck.Deal(),17);
+        grid.PlaceCard(deck.Deal(),18);
+
+
+        C.Add(new CardHand());
+         
+         
+
+
+        
+        for(int rnd=0;rnd<4;rnd++){
+            P1.AddCard(deck);
+            for(int pc=0;pc<C.Count;pc++) C[pc].AddCard(deck);
+        }
+        
+        
+
+
+
+
+
+        InHandStyles.Add("border: none;");
+        InHandStyles.Add("border: none;");
+        InHandStyles.Add("border: none;");
+        InHandStyles.Add("border: none;");
+        for(int ccc=0;ccc<C.Count;ccc++) OpponentPlays(ccc);
+
+    }
+
+    public void PlaceCard(int pos){
+
+        if(selectedCard != null && grid.PositionsLeft()){
+            if(grid.EmptySpaces[pos]){
+                grid.PlaceCard(selectedCard,pos);
+                P1.InHand.Remove(selectedCard);
+                selectedCard = null;
+                P1.AddCard(deck);
+                P1.Score += Combination.GetGridPosScore(pos, grid);
+                if(!grid.PositionsLeft()) GameOver = true;
+            }
+        }
+        else GameOver=true;
+
+       for(int ccc=0;ccc<C.Count;ccc++) if(grid.PositionsLeft())OpponentPlays(ccc);
+       else GameOver = true;
+    }
+
+    public void OpponentPlays(int ccc){
+        if(grid.PositionsLeft()){
+
+       
+
+            int CompScoreToBeat = 0;
+            int CompCardIDX = 0;
+            int CompGridPos = 0;
+            for(int ohc=0;ohc<C[ccc].InHand.Count;ohc++){
+                for(int tgpc=0;tgpc<40;tgpc++){
+                if(grid.MT(tgpc)){
+                    CardGrid tempCardGrid = new();
+                for(int ctc=0;ctc<40;ctc++) if(grid.CardSpaces[ctc] != null) tempCardGrid.PlaceCard(grid.CardSpaces[ctc],ctc);            
+                tempCardGrid.PlaceCard(C[ccc].InHand[ohc],tgpc);
+
+         
+
+           
+                for(int mpc=0;mpc<10;mpc++){
+                    if(tempCardGrid.PositionCombos[tgpc,mpc] ){
+                        int P1 = tgpc+tempCardGrid.MasterCombos[mpc,0];
+                        int P2 = tgpc+tempCardGrid.MasterCombos[mpc,1];
+                        int P3 = tgpc+tempCardGrid.MasterCombos[mpc,2];
+
+                    
+                        if(tempCardGrid.CardSpaces[P1] != null && tempCardGrid.CardSpaces[P2]!= null && tempCardGrid.CardSpaces[P3] != null){
+                            //Console.WriteLine(P1.ToString("D2")+P2.ToString("D2")+P3.ToString("D2"));
+                            int LineScore =  Combination.CalcCombination(tempCardGrid.CardSpaces[P1],tempCardGrid.CardSpaces[P2],tempCardGrid.CardSpaces[P3]);
+                            if(LineScore > CompScoreToBeat){
+                            
+                                Console.WriteLine("Line score:"+LineScore.ToString());
+                                CompScoreToBeat = LineScore;
+                                CompCardIDX=ohc;
+                                CompGridPos = tgpc;
+                        
+                            }
+                        
+                        
+                        }
+                    
+                    }
+                
+                }
+            }
+        }
+    }
+    
+    grid.PlaceCard(C[ccc].InHand[CompCardIDX],CompGridPos);   
+    C[ccc].InHand.Remove(C[ccc].InHand[CompCardIDX]);
+    C[ccc].AddCard(deck);
+    C[ccc].Score += CompScoreToBeat;
+
+ }
+        else GameOver=true;
+    
+
+
+    }
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
